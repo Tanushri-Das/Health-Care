@@ -1,0 +1,177 @@
+.header {
+  background: white;
+  box-shadow: 0px 7.5px 15px 0px #021d350f;
+  padding: 30px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-text {
+  font-family: Outfit;
+  color: #004990;
+  font-size: 26.83px;
+  font-weight: 800;
+  line-height: 33.81px;
+}
+
+.logo img {
+  margin-right: 10px;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  gap: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #102851;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.79px;
+}
+
+.nav a:hover {
+  color: #004990;
+}
+
+.icon-container {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.icon {
+  position: relative;
+  width: 42px;
+  height: 42px;
+  border: 0.75px solid #0049904d;
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.icon:hover {
+  border-color: #0056b3;
+}
+
+.cart-icon .cart-count {
+  position: absolute;
+  top: -5px;
+  right: -1px;
+  background: #0056b3;
+  color: white;
+  font-size: 12px;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.appointment-btn {
+  background: linear-gradient(180deg, #014990 37.5%, #daedff 100%);
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  border-radius: 24.83px;
+  padding: 15px 20px;
+  font-family: Open Sans;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 14px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0px 2.48px 12.42px 0px #afc2d3;
+}
+
+@media (min-width: 992px) {
+  .nav {
+    display: none;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .desktop-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .nav-desktop {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+  }
+
+  .icon-container {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+@media (max-width: 991px) {
+
+  .desktop-menu {
+    display: none;
+  }
+
+  .nav {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: white;
+    padding: 20px;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0px 7.5px 15px 0px #021d350f;
+    animation: slideIn 0.3s ease-in-out;
+  }
+
+  .nav.active {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+    font-size: 24px!important;
+    cursor: pointer;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    top: -100%;
+  }
+  to {
+    top: 60px;
+  }
+}
