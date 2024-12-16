@@ -32,11 +32,11 @@ const Header = () => {
 
         {/* Navigation Links, Icons, and Button for Small Screens */}
         <nav className={`nav ${menuOpen ? "active" : ""}`}>
-          <Link href="/">Find Doctors</Link>
-          <Link href="/">Hospitals</Link>
-          <Link href="/">About Us</Link>
-          <Link href="/">Services</Link>
-          <Link href="/">Contact</Link>
+          <Link href="/" className="links">Find Doctors</Link>
+          <Link href="/" className="links">Hospitals</Link>
+          <Link href="/" className="links">About Us</Link>
+          <Link href="/" className="links">Services</Link>
+          <Link href="/" className="links">Contact</Link>
           <div className="icon-container">
             <div className="icon">
               <Image src={search} alt="search" width={15} height={15} />
@@ -52,11 +52,11 @@ const Header = () => {
         {/* Desktop Menu (Large Screen) */}
         <div className="desktop-menu">
           <nav className="nav-desktop">
-            <Link href="/">Find Doctors</Link>
-            <Link href="/">Hospitals</Link>
-            <Link href="/">About Us</Link>
-            <Link href="/">Services</Link>
-            <Link href="/">Contact</Link>
+            <Link href="/" className="links">Find Doctors</Link>
+            <Link href="/" className="links">Hospitals</Link>
+            <Link href="/" className="links">About Us</Link>
+            <Link href="/" className="links">Services</Link>
+            <Link href="/" className="links">Contact</Link>
           </nav>
           <div className="icon-container">
             <div className="icon">

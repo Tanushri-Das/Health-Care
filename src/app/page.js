@@ -1,3 +1,4 @@
+import ChooseUs from '@/components/ChooseUs/ChooseUs'
 import Hero from '@/components/Hero/Hero'
 import Search from '@/components/Search/Search'
 import Services from '@/components/Services/Services'
@@ -9,6 +10,7 @@ const page = () => {
       <Hero/>
       <Search/>
       <Services/>
+      <ChooseUs/>
     </div>
   )
 }
