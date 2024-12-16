@@ -1,0 +1,102 @@
+.search {
+  position: absolute; /* Position the Search component absolutely */
+  top: 88%; /* Adjust it to overlap half the height */
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
+  z-index: 10; /* Ensure it appears above the Hero content */
+  width: 80%; /* Adjust width for better responsiveness */
+}
+
+.search-div {
+  box-shadow: 0px 3px 15px 0px #0000001a;
+  background-color: white;
+  padding-left: 20px;
+  padding-right: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 13.81px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 11px;
+}
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: #fafbfe;
+  border: 0.92px solid #f0f0f0;
+  border-radius: 7.37px;
+  padding: 14.73px;
+  flex: 1;
+}
+
+.search-icon {
+  margin-right: 8px;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  background-color: #fafbfe;
+  color: #abb6c7;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12.89px;
+  font-weight: 400;
+  line-height: 17.55px;
+  letter-spacing: 0.02em;
+  width: 100%;
+}
+.search-btn {
+  background: linear-gradient(180deg, #014990 37.5%, #daedff 100%);
+  color: white;
+  border: none;
+  border-radius: 24.83px;
+  padding: 15px 20px;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21.79px;
+  letter-spacing: 0.02em;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0px 2.48px 12.42px 0px #afc2d3;
+}
+/* Mobile-first adjustments for Search */
+@media (max-width: 768px) {
+  .search {
+    top: auto; /* Remove absolute positioning for better stacking */
+    left: auto;
+    transform: none;
+    width: 90%;
+    margin: 20px auto;
+    position: relative;
+  }
+
+  .search-div {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .search-container {
+    flex: 1;
+    width: 100%; /* Expand input fields to fill the available space */
+    padding: 10px;
+  }
+
+  .search-btn {
+    width: 100%; /* Full-width button for mobile */
+    text-align: center;
+  }
+
+  .search-icon {
+    margin-right: 5px; /* Adjust icon spacing for smaller inputs */
+  }
+
+  .search-input {
+    font-size: 12px; /* Smaller font size for compact inputs */
+  }
+}

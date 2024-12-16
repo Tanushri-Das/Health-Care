@@ -3,7 +3,7 @@ import logo from "@/images/logo.png";
 import Image from "next/image";
 import "./Hero.css";
 import Link from "next/link";
-import heroImg from "@/images/hero_image.png";
+import heroImg from "@/images/doctor.png";
 
 const Hero = () => {
   return (
@@ -30,13 +30,13 @@ const Hero = () => {
           </Link>
         </div>
       </div>
-      <div>
+      <div className="img-div">
         <Image
           src={heroImg}
           className="hero-img"
           alt="hero-img"
-          width={607}
-          height={694.74}
+          width={552.25}
+          height={454.07}
         />
       </div>
     </div>
