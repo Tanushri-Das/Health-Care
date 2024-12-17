@@ -1,0 +1,43 @@
+.doctors {
+  margin-bottom: 50px;
+}
+.doctors-text {
+  font-family: Open Sans;
+  font-size: 36.44px;
+  font-weight: 600;
+  line-height: 51.57px;
+  text-align: center;
+  color: #000d44;
+  text-transform: capitalize;
+}
+.doctors-desc {
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: #788094;
+  width: 550px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+.doctor-cards-container {
+  display: grid;
+  grid-gap: 44px;
+  grid-template-columns: repeat(1, 1fr);
+}
+@media (min-width: 600px) {
+  .doctor-cards-container {
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media (min-width: 1024px) {
+  .doctor-cards-container {
+    padding-left: 100px;
+    padding-right: 100px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

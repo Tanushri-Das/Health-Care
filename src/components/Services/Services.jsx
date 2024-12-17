@@ -11,7 +11,7 @@ import img6 from "@/images/services/img6.png";
 import img7 from "@/images/services/img7.png";
 import img8 from "@/images/services/img8.png";
 import ServiceCard from "../ServiceCard/ServiceCard";
-import ExploreServices from "../ExploreServices/ExploreServices";
+import Explore from "../shared/Explore/Explore";
 
 const Services = () => {
   const services = [
@@ -80,7 +80,10 @@ const Services = () => {
           <ServiceCard key={service.id} service={service} />
         ))}
       </div>
-      <ExploreServices />
+      <Explore
+        title={"You Get Our 20+ More services"}
+        text={"EXPLORE ALL SERVICES"}
+      />
     </div>
   );
 };

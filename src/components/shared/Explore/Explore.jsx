@@ -1,15 +1,15 @@
 import React from "react";
-import "./ExploreServices.css";
+import "./Explore.css";
 import Link from "next/link";
 
-const ExploreServices = () => {
+const Explore = ({ title, text }) => {
   return (
     <div className="container">
       <div className="line"></div>
       <div className="content">
-        <span className="text">You Get Our 20+ More services...</span>
+        <span className="text">{title}...</span>
         <Link href="#" className="link">
-          EXPLORE ALL SERVICES
+          {text}
         </Link>
       </div>
       <div className="line"></div>
@@ -17,4 +17,4 @@ const ExploreServices = () => {
   );
 };
 
-export default ExploreServices;
+export default Explore;
