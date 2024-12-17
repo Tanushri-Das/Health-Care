@@ -1,16 +1,27 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Open_Sans, DM_Sans, Outfit, Roboto } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/shared/Header/Header";
 import Footer from "@/components/shared/Footer/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+// Load fonts using next/font
+const openSans = Open_Sans({
   subsets: ["latin"],
+  weight: ["400", "600", "700"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const dmSans = DM_Sans({
   subsets: ["latin"],
+  weight: ["400", "500", "700"],
+});
+
+const outfit = Outfit({
+  subsets: ["latin"],
+  weight: ["400", "600", "700"],
+});
+
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
 });
 
 export const metadata = {
@@ -21,7 +32,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body
+        className={`${openSans.variable} ${dmSans.variable} ${outfit.variable} ${roboto.variable}`}
+      >
         <div className="app-container">
           <Header />
           {children}
