@@ -33,6 +33,7 @@
 .social-links {
   display: flex;
   align-items: center;
+  margin-top: 20px;
   gap: 13px;
 }
 .social-btn {
@@ -105,10 +106,15 @@
 
 @media (min-width: 991px) {
   .footer-bg {
-    padding: 50.72px 138.26px 50.72px 138.26px;
+    padding: 50px;
     gap: 10.24px;
   }
   .footer-content {
     grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (min-width: 1201px) {
+  .footer-bg {
+    padding: 50.72px 138.26px 50.72px 138.26px;
   }
 }

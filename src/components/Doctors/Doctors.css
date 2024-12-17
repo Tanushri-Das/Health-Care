@@ -42,14 +42,16 @@
 }
 @media (min-width: 1024px) {
   .doctor-cards-container {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
   }
 }
 @media (min-width: 1201px) {
   .doctor-cards-container {
+    padding-left: 100px;
+    padding-right: 100px;
     grid-gap: 44px;
   }
 }

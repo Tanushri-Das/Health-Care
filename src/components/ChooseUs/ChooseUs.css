@@ -95,11 +95,16 @@
 }
 @media (min-width: 1024px) {
   .choose {
-    padding-left: 100px;
-    padding-right: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media (min-width: 1201px) {
+  .choose {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
   .choose-img {
     display: block;
     max-width: 100%;

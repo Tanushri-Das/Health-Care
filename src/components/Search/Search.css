@@ -1,10 +1,10 @@
 .search {
-  position: absolute; /* Position the Search component absolutely */
-  top: 88%; /* Adjust it to overlap half the height */
+  position: absolute;
+  top: 88%; /* Overlap with Hero bottom */
   left: 50%;
-  transform: translateX(-50%); /* Center horizontally */
-  z-index: 10; /* Ensure it appears above the Hero content */
-  width: 90%; /* Default width for all screens */
+  transform: translateX(-50%);
+  z-index: 10;
+  width: 77%; /* Width for larger screens */
 }
 
 .search-div {
@@ -68,7 +68,7 @@
 }
 
 /* Mobile-first adjustments for Search */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .search {
     top: auto; /* Remove absolute positioning for better stacking */
     left: auto;
@@ -103,15 +103,29 @@
     font-size: 12px; /* Smaller font size for compact inputs */
   }
 }
-
-@media (min-width: 1024px) {
+@media (max-width: 768px) {
   .search {
-    top: auto; /* Remove absolute positioning for better stacking */
+    position: relative;
+    top: 0;
     left: auto;
     transform: none;
-    width: 90%; /* Keep width 90% for screens >= 1024px */
+    width: 90%; /* Adjust width for smaller screens */
     margin: 20px auto;
-    position: relative;
+  }
+
+  .search-div {
+    gap: 15px;
+    padding: 15px;
+  }
+}
+@media (min-width: 1024px) {
+  .search {
+    position: absolute; /* Same positioning as 1201px */
+    top: 89%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    width: 80%;
   }
 }
 
@@ -119,7 +133,7 @@
   .search {
     position: absolute;
     left: 50%;
-    top: 84.6%;
+    top: 89.75%;
     transform: translateX(-50%);
     z-index: 10;
     width: 77%;

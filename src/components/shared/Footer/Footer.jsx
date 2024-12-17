@@ -24,7 +24,7 @@ const Footer = () => {
             Sahibabad, Ghaziabad, Uttar Pradesh 201005
           </p>
           <h3 className="footer-text">+1-887*****78787</h3>
-          <h4>info@demohelp.com</h4>
+          <h4 className="footer-text">info@demohelp.com</h4>
           <div className="social-links">
             <div className="social-btn">
               <FaFacebook className="social-icon" />

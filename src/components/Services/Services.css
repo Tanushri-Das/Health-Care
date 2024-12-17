@@ -61,6 +61,16 @@
     margin-top: 120px;
   }
   .service-cards-container {
+    padding-left: 50px;
+    padding-right: 50px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (min-width: 1201px) {
+  .services {
+    margin-top: 120px;
+  }
+  .service-cards-container {
     padding-left: 100px;
     padding-right: 100px;
     grid-template-columns: repeat(4, 1fr);
