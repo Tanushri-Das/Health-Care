@@ -1,5 +1,5 @@
 .contact {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 .contacts-text {
   font-family: Open Sans;
@@ -103,7 +103,12 @@ label {
     width: 100%;
   }
 }
-
+@media (max-width: 768px) {
+  .contacts-desc {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+}
 /* Medium and larger screens (min-width: 600px) */
 @media (min-width: 601px) {
   .contact-div {
