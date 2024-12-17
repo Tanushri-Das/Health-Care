@@ -1,8 +1,8 @@
 .choose {
   background: linear-gradient(244.84deg, #fbfeff 0%, #f2faff 99.61%);
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-top:60px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 60px;
   padding-bottom: 20px;
   margin-bottom: 50px;
   display: flex;
@@ -81,54 +81,29 @@
 }
 
 .choose-img {
-  max-width: 100%;
-  height: auto;
-  object-fit: contain;
+  display: none;
 }
 
-/* Media Query for screens 1024px and below */
-@media (max-width: 1024px) {
+@media (min-width: 600px) {
   .choose {
     padding-left: 50px;
     padding-right: 50px;
   }
+  .choose-img {
+    display: none;
+  }
 }
-
-/* Media Query for screens 768px and below */
-@media (max-width: 768px) {
+@media (min-width: 1024px) {
   .choose {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
 }
-
-/* Media Query for screens 600px and below */
-@media (max-width: 600px) {
-  .choose {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-}
-
-/* Media Query for screens 1200px and below */
-@media (max-width: 1200px) {
-  .choose {
-    flex-direction: column; /* Stack content vertically */
-    gap: 20px;
-  }
-
-  .choose-sec {
-    display: none; /* Hide the image */
-  }
-}
-
-/* Media Query for screens 1201px and above */
 @media (min-width: 1201px) {
-  .choose {
-    flex-direction: row; /* Default row layout */
-  }
-
-  .choose-sec {
-    display: flex; /* Ensure the image container is visible */
+  .choose-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
   }
 }

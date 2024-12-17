@@ -1,0 +1,142 @@
+.contact {
+  margin-bottom: 50px;
+}
+.contacts-text {
+  font-family: Open Sans;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 42px;
+  text-align: center;
+  color: #000d44;
+  margin-bottom: 8px;
+}
+.contacts-desc {
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.79px;
+  text-align: center;
+  width: 700px;
+  margin: 0 auto;
+  color: #788094;
+  text-transform: capitalize;
+}
+.form {
+  border: 1.4px solid #195b9c;
+  padding: 20px 25px;
+  border-radius: 9.15px;
+  width: 100%;
+  max-width: 539.12px;
+  box-sizing: border-box;
+}
+
+.name-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.form-input-div {
+  flex: 1 1 48%;
+  margin-bottom: 10px;
+  min-width: 200px;
+}
+
+label {
+  font-family: General Sans, sans-serif;
+  font-size: 16.48px;
+  font-weight: 500;
+  line-height: 25.54px;
+  letter-spacing: 0.015em;
+  display: block;
+  color: #3c4959;
+  margin-bottom: 5px;
+}
+
+.input-field {
+  border: 0.92px solid #d0d5dd;
+  border-radius: 9.15px;
+  box-sizing: border-box;
+  width: 100%;
+  font-family: General Sans, sans-serif;
+  font-size: 12.81px;
+  font-weight: 400;
+  line-height: 19.86px;
+  letter-spacing: 0.02em;
+  color: #667085;
+  padding: 10.98px 14.65px;
+  outline: none;
+  box-shadow: 0px 0.92px 1.83px 0px #1018280d;
+}
+
+.form-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.contact-img {
+  display: none;
+}
+
+/* Small screens */
+@media (max-width: 600px) {
+  .form {
+    max-width: 100%;
+  }
+  .contacts-desc {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+  .contact-div {
+    margin-top: 50px;
+  }
+  /* Change name-div to column direction */
+  .name-div {
+    flex-direction: column; /* Stack the name fields vertically */
+  }
+
+  /* Make the form take full width */
+  .form {
+    width: 100%;
+  }
+}
+
+/* Medium and larger screens (min-width: 600px) */
+@media (min-width: 601px) {
+  .contact-div {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    margin-top: 50px;
+  }
+
+  .form {
+    max-width: 539.12px;
+  }
+}
+
+/* Large screens: Image and form in a row */
+@media (min-width: 1201px) {
+  .contact-div {
+    flex-wrap: nowrap; /* Prevent wrapping */
+    justify-content: space-between; /* Center the form */
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .contact-img {
+    display: block;
+  }
+
+  .form {
+    flex: 1;
+    max-width: 539.12px;
+  }
+  .contact-div {
+    margin-top: 0px;
+  }
+}

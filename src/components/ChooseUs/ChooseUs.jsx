@@ -21,8 +21,8 @@ const ChooseUs = () => {
           <div>
             <h2 className="choose-content-text">Compassionate & Expert Care</h2>
             <p className="choose-content-desc">
-              Our team of dedicated healthcare professionals combines years <br /> of
-              experience with a genuine commitment to providing.
+              Our team of dedicated healthcare professionals combines years{" "}
+              <br /> of experience with a genuine commitment to providing.
             </p>
             <div className="border-line"></div>
           </div>
@@ -43,7 +43,8 @@ const ChooseUs = () => {
           <div>
             <h2 className="choose-content-text">Compassionate & Expert Care</h2>
             <p className="choose-content-desc">
-              We understand that every patient is unique, and their healthcare <br />
+              We understand that every patient is unique, and their healthcare{" "}
+              <br />
               needs may vary. That's why we create individualized treatment.
             </p>
           </div>
