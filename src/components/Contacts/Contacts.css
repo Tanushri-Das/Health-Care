@@ -51,7 +51,7 @@ label {
   letter-spacing: 0.015em;
   display: block;
   color: #3c4959;
-  margin-bottom: 5px;
+  margin-bottom: 9.15px;
 }
 
 .input-field {
@@ -126,11 +126,10 @@ label {
 /* Large screens: Image and form in a row */
 @media (min-width: 1201px) {
   .contact-div {
-    flex-wrap: nowrap; /* Prevent wrapping */
     justify-content: space-between; /* Center the form */
     align-items: center;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 152px;
+    padding-right: 152px;
   }
 
   .contact-img {

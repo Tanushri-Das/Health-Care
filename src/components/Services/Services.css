@@ -71,8 +71,8 @@
     margin-top: 120px;
   }
   .service-cards-container {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 152px;
+    padding-right: 152px;
     grid-template-columns: repeat(4, 1fr);
   }
 }

@@ -50,8 +50,8 @@
 }
 @media (min-width: 1201px) {
   .doctor-cards-container {
-    padding-left: 100px;
-    padding-right: 100px;
-    grid-gap: 44px;
+    padding-left: 152px;
+    padding-right: 152px;
+    grid-gap: 35px;
   }
 }

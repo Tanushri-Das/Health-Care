@@ -2,7 +2,6 @@
   background-color: #0f192b;
   padding: 50px;
   gap: 10.24px;
-  opacity: 0px;
 }
 .footer-content {
   display: grid;
@@ -115,6 +114,7 @@
 }
 @media (min-width: 1201px) {
   .footer-bg {
-    padding: 50.72px 138.26px 50.72px 138.26px;
+    /* padding: 50.72px 138.26px 50.72px 138.26px; */
+    padding: 50.72px 152px 50.72px 152px;
   }
 }
