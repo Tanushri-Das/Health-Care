@@ -9,6 +9,7 @@ import {
   FaPinterestP,
   FaAngleRight,
 } from "react-icons/fa";
+import Link from "next/link";
 
 const Footer = () => {
   const date = new Date();
@@ -26,18 +27,18 @@ const Footer = () => {
           <h3 className="footer-text">+1-887*****78787</h3>
           <h4 className="footer-text">info@demohelp.com</h4>
           <div className="social-links">
-            <div className="social-btn">
+            <Link href="/" className="social-btn">
               <FaFacebook className="social-icon" />
-            </div>
-            <div className="social-btn">
+            </Link>
+            <Link href="/" className="social-btn">
               <FaTwitter className="social-icon" />
-            </div>
-            <div className="social-btn">
+            </Link>
+            <Link href="/" className="social-btn">
               <FaYoutube className="social-icon" />
-            </div>
-            <div className="social-btn">
+            </Link>
+            <Link href="/" className="social-btn">
               <FaPinterestP className="social-icon" />
-            </div>
+            </Link>
           </div>
         </div>
         <div>

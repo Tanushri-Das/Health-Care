@@ -22,10 +22,10 @@ const Hero = () => {
           This can include the commitment to patient care, community health.
         </p>
         <div className="btn-div">
-          <Link href="/discover-more">
+          <Link href="/">
             <button className="discover">Discover More</button>
           </Link>
-          <Link href="/services">
+          <Link href="/">
             <button className="appointment-btn">See All Services</button>
           </Link>
         </div>
