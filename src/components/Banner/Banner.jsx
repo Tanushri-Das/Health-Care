@@ -4,7 +4,7 @@ import Search from "../Search/Search";
 
 const Banner = () => {
   return (
-    <div style={{ position: "relative" }}>
+    <div className="banner">
       <Hero />
       <Search />
     </div>

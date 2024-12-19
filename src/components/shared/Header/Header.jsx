@@ -19,10 +19,10 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header-container">
-        <div className="logo">
+        <Link href="/" className="logo">
           <Image src={logo} alt="Health Logo" width={45.04} height={46} />
           <h2 className="logo-text">Health</h2>
-        </div>
+        </Link>
         <div className="menu-icon" onClick={toggleMenu}>
           {menuOpen ? <FaTimes /> : <FiMenu />}
         </div>

@@ -10,7 +10,9 @@
     rgba(232, 241, 255, 0.329) 89.11%
   );
 }
-
+.banner {
+  position: relative;
+}
 .logo-div {
   display: flex;
   align-items: center;
@@ -81,7 +83,6 @@
   box-shadow: 0px 3.11px 15.54px 0px #b3d4e2e5;
 }
 
-/* Extra-large screens: 1401px and above */
 @media (min-width: 1401px) {
   .hero {
     padding-left: 152px;
@@ -110,7 +111,6 @@
   }
 }
 
-/* Large screens: 1201px to 1400px */
 @media (min-width: 1201px) and (max-width: 1400px) {
   .hero {
     height: 592px;
@@ -191,7 +191,6 @@
   }
 }
 
-/* Small screens: below 768px */
 @media (max-width: 768px) {
   .hero {
     height: 592px;
