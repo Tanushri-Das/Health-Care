@@ -54,7 +54,8 @@ label {
   margin-bottom: 9.15px;
 }
 
-.input-field {
+.input-field,
+.phone-input-wrapper {
   border: 0.92px solid #d0d5dd;
   border-radius: 9.15px;
   box-sizing: border-box;
@@ -81,7 +82,22 @@ label {
   display: none;
 }
 
-/* Small screens */
+.country-code {
+  border: none;
+  outline: none;
+  margin-right: 8px;
+  color: #011632;
+  font-family: General Sans;
+  font-size: 14.65px;
+  font-weight: 400;
+  line-height: 22.7px;
+  letter-spacing: 0.015em;
+}
+.phone-number {
+  border: none;
+  outline: none;
+}
+
 @media (max-width: 600px) {
   .form {
     max-width: 100%;
@@ -93,12 +109,10 @@ label {
   .contact-div {
     margin-top: 50px;
   }
-  /* Change name-div to column direction */
   .name-div {
-    flex-direction: column; /* Stack the name fields vertically */
+    flex-direction: column;
   }
 
-  /* Make the form take full width */
   .form {
     width: 100%;
   }
@@ -109,12 +123,12 @@ label {
     padding: 0 10px;
   }
 }
-/* Medium and larger screens (min-width: 600px) */
+
 @media (min-width: 601px) {
   .contact-div {
     display: flex;
-    justify-content: center; /* Center the content horizontally */
-    align-items: center; /* Center the content vertically */
+    justify-content: center;
+    align-items: center;
     margin-top: 50px;
   }
 
@@ -123,24 +137,30 @@ label {
   }
 }
 
-/* Large screens: Image and form in a row */
 @media (min-width: 1201px) {
   .contact-div {
-    justify-content: space-between; /* Center the form */
     align-items: center;
     padding-left: 152px;
     padding-right: 152px;
+    margin-top: 50px;
   }
 
   .contact-img {
     display: block;
   }
+  .name-div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 15px;
+  }
+  .form-input-div {
+    flex: 1;
+    min-width: 0;
+  }
 
   .form {
     flex: 1;
     max-width: 539.12px;
-  }
-  .contact-div {
-    margin-top: 0px;
   }
 }

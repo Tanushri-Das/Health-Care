@@ -3,12 +3,9 @@ import Image from "next/image";
 import React, { useState } from "react";
 import logo from "@/images/logo.png";
 import contactImg from "@/images/contact.png";
-import PhoneInput from "react-phone-input-2";
-import "react-phone-input-2/lib/style.css";
 import "./Contacts.css";
 
 const Contacts = () => {
-  const [phoneNumber, setPhoneNumber] = useState("");
   const [selectedDate, setSelectedDate] = useState("2022-12-02");
 
   const formatDate = (date) => {
@@ -39,7 +36,7 @@ const Contacts = () => {
       </p>
       <div className="contact-div">
         <div>
-          <Image src={contactImg} alt="contact Img" className="contact-img"/>
+          <Image src={contactImg} alt="contact Img" className="contact-img" />
         </div>
         <div>
           <form className="form">
@@ -74,16 +71,19 @@ const Contacts = () => {
             </div>
             <div className="form-input-div">
               <label>Phone number</label>
-              <PhoneInput
-                country={"us"}
-                value={phoneNumber}
-                onChange={(phone) => setPhoneNumber(phone)}
-                placeholder="+1 (555) 000-0000"
-                inputProps={{
-                  required: true,
-                  className: "input-field",
-                }}
-              />
+              <div className="phone-input-wrapper">
+                <select className="country-code">
+                  <option value="US">US</option>
+                  <option value="BD">BD</option>
+                  <option value="UK">UK</option>
+                </select>
+                <input
+                  type="tel"
+                  id="phone"
+                  className="phone-number"
+                  placeholder="+1 (555) 000-0000"
+                />
+              </div>
             </div>
             <div className="form-input-div">
               <label>Select date</label>
@@ -101,7 +101,11 @@ const Contacts = () => {
             </div>
             <div>
               <label>Message</label>
-              <textarea required name="message" className="input-field"></textarea>
+              <textarea
+                required
+                name="message"
+                className="input-field"
+              ></textarea>
             </div>
             <div className="form-btn">
               <button className="appointment-btn">Appointment Now</button>
