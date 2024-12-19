@@ -140,8 +140,8 @@ label {
 @media (min-width: 1201px) {
   .contact-div {
     align-items: center;
-    padding-left: 152px;
-    padding-right: 152px;
+    padding-left: 50px;
+    padding-right: 50px;
     margin-top: 50px;
   }
 
@@ -162,5 +162,13 @@ label {
   .form {
     flex: 1;
     max-width: 539.12px;
+  }
+}
+@media (min-width: 1401px) {
+  .contact-div {
+    align-items: center;
+    padding-left: 152px;
+    padding-right: 152px;
+    margin-top: 50px;
   }
 }

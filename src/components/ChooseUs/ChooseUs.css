@@ -101,14 +101,16 @@
   }
 }
 @media (min-width: 1201px) {
-  .choose {
-    padding-left: 152px;
-    padding-right: 152px;
-  }
   .choose-img {
     display: block;
     max-width: 100%;
     height: auto;
     object-fit: contain;
+  }
+}
+@media (min-width: 1401px) {
+  .choose {
+    padding-left: 152px;
+    padding-right: 152px;
   }
 }

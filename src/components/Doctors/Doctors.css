@@ -9,6 +9,7 @@
   text-align: center;
   color: #000d44;
   text-transform: capitalize;
+  margin-bottom: 10px;
 }
 .doctors-desc {
   font-family: Open Sans;
@@ -19,7 +20,7 @@
   color: #788094;
   width: 550px;
   margin: 0 auto;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
 }
 
 .doctor-cards-container {
@@ -49,6 +50,13 @@
   }
 }
 @media (min-width: 1201px) {
+  .doctor-cards-container {
+    padding-left: 50px;
+    padding-right: 50px;
+    grid-gap: 35px;
+  }
+}
+@media (min-width: 1401px) {
   .doctor-cards-container {
     padding-left: 152px;
     padding-right: 152px;

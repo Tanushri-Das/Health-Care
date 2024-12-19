@@ -114,7 +114,12 @@
 }
 @media (min-width: 1201px) {
   .footer-bg {
-    /* padding: 50.72px 138.26px 50.72px 138.26px; */
+    padding: 50px;
+    gap: 10.24px;
+  }
+}
+@media (min-width: 1401px) {
+  .footer-bg {
     padding: 50.72px 152px 50.72px 152px;
   }
 }

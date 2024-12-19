@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 152px; /* Horizontal padding */
+  padding: 50px;
   background: linear-gradient(
     81deg,
     rgba(241, 250, 255, 0.7) 9.01%,
@@ -15,6 +15,7 @@
   display: flex;
   align-items: center;
 }
+
 .hero-text {
   color: #1bb4fb;
   font-family: Open Sans;
@@ -23,6 +24,7 @@
   line-height: 28px;
   text-transform: uppercase;
 }
+
 .hero-content-text1 {
   font-family: Open Sans;
   font-size: 62px;
@@ -34,25 +36,25 @@
 .health {
   color: #004990;
   position: relative;
-  display: inline-block; /* Makes the text width wrap the line */
+  display: inline-block;
 }
 
 .health::after {
   content: "";
   position: absolute;
-  bottom: 1px; /* Adjust the vertical position of the line */
-  left: -20px;
-  width: 240px;
+  bottom: -12px;
+  left: 0;
+  width: 100%;
   height: 16.17px;
   background-image: url("../../images/border-line.png");
   background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .hero-content-text2 {
   font-family: Open Sans;
   font-size: 57px;
   font-weight: 700;
-  line-height: 94.08px;
   color: #04182b;
 }
 
@@ -61,6 +63,7 @@
   margin-top: 20px;
   gap: 31px;
 }
+
 .discover {
   font-family: Open Sans;
   font-size: 14.5px;
@@ -76,9 +79,29 @@
   background: linear-gradient(180deg, #00a4f4 37.5%, #d9f3ff 100%);
   box-shadow: 0px 3.11px 15.54px 0px #b3d4e2e5;
 }
-@media (min-width: 1024px) {
+
+/* Extra-large screens: 1401px and above */
+@media (min-width: 1401px) {
+  .hero {
+    padding-left: 152px;
+    padding-right: 152px;
+  }
+  .hero-description {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    color: #788094;
+  }
+  .hero-content-text2 {
+    line-height: 94.08px;
+  }
+}
+
+/* Large screens: 1201px to 1400px */
+@media (min-width: 1201px) and (max-width: 1400px) {
   .hero {
     height: 592px;
+    padding: 50px;
   }
   .hero-img {
     display: block;
@@ -91,68 +114,98 @@
     line-height: 30px;
     color: #788094;
   }
-}
-
-@media (max-width: 1200px) {
-  .hero {
-    padding: 50px;
-  }
-  .hero-img {
-    display: none;
-  }
-  .hero-description {
-    width: 100%;
-    font-family: Open Sans;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 30px;
-    color: #788094;
+  .hero-content-text2 {
+    line-height: 94.08px;
   }
 }
 
-/* Mobile-first adjustments for Hero */
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1200px) {
   .hero {
     height: 592px;
-    padding: 50px;
+    justify-content: center;
     text-align: center;
-  }
-  .health::after {
-    content: "";
-    position: absolute;
-    bottom: -12px; /* Adjust the vertical position of the line */
-    left: 0; /* Ensure the line starts at the beginning of the text */
-    width: 100%; /* Make the line width adjust dynamically */
-    height: 16.17px; /* Adjust based on the image height */
-    background-image: url("../../images/border-line.png");
-    background-repeat: no-repeat;
-    background-size: contain; /* Ensure the line image scales properly */
+    padding: 50px;
   }
   .logo {
     justify-content: center;
     margin-bottom: 15px;
   }
-
+  .hero-img {
+    display: none;
+  }
   .hero-content-text1 {
     font-size: 42px;
-    line-height: 52px;
+    line-height: 85px;
   }
-
+  .health::after {
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    width: 100%;
+    height: 16.17px;
+    background-image: url("../../images/border-line.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
   .hero-content-text2 {
     font-size: 36px;
-    line-height: 46px;
+    margin-bottom: 20px;
   }
+  .hero-description {
+    max-width: 600px;
+    font-family: Open Sans;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    color: #788094;
+  }
+  .btn-div {
+    justify-content: center;
+    gap: 15px;
+  }
+}
 
+/* Small screens: below 768px */
+@media (max-width: 768px) {
+  .hero {
+    height: 592px;
+    text-align: center;
+    padding: 20px;
+  }
+  .logo {
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  .hero-img {
+    display: none;
+  }
+  .hero-content-text1 {
+    font-size: 36px;
+  }
+  .health::after {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    height: 16.17px;
+    background-image: url("../../images/border-line.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .hero-content-text2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
   .hero-description {
     font-size: 14px;
     line-height: 24px;
     margin-bottom: 20px;
+    color: #788094;
   }
-
   .btn-div {
-    display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 15px;
+    gap: 10px;
   }
 }
