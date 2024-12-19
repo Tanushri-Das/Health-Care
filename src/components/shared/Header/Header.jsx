@@ -27,19 +27,19 @@ const Header = () => {
           {menuOpen ? <FaTimes /> : <FiMenu />}
         </div>
         <nav className={`nav ${menuOpen ? "active" : ""}`}>
-          <Link href="/" className="links">
+          <Link href="#doctors" className="links" onClick={toggleMenu}>
             Find Doctors
           </Link>
-          <Link href="/" className="links">
+          <Link href="#hospitals" className="links" onClick={toggleMenu}>
             Hospitals
           </Link>
-          <Link href="/" className="links">
+          <Link href="#about" className="links" onClick={toggleMenu}>
             About Us
           </Link>
-          <Link href="/" className="links">
+          <Link href="#services" className="links" onClick={toggleMenu}>
             Services
           </Link>
-          <Link href="/" className="links">
+          <Link href="#contact" className="links" onClick={toggleMenu}>
             Contact
           </Link>
           <div className="icon-container">
@@ -56,19 +56,19 @@ const Header = () => {
 
         <div className="desktop-menu">
           <nav className="nav-desktop">
-            <Link href="/" className="links">
+            <Link href="#doctors" className="links">
               Find Doctors
             </Link>
-            <Link href="/" className="links">
+            <Link href="#hospitals" className="links">
               Hospitals
             </Link>
-            <Link href="/" className="links">
+            <Link href="#about" className="links">
               About Us
             </Link>
-            <Link href="/" className="links">
+            <Link href="#services" className="links">
               Services
             </Link>
-            <Link href="/" className="links">
+            <Link href="#contact" className="links">
               Contact
             </Link>
           </nav>

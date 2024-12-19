@@ -42,7 +42,7 @@ const Doctors = () => {
     },
   ];
   return (
-    <div className="doctors">
+    <div id="doctors" className="doctors">
       <div className="service-logo">
         <Image src={logo} alt="Health Logo" width={16.4} height={16.39} />
         <h2 className="service-text">Our doctor's</h2>

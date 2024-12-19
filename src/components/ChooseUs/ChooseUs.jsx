@@ -6,16 +6,20 @@ import chooseImg from "@/images/choose.png";
 
 const ChooseUs = () => {
   return (
-    <div className="choose">
+    <div id="about" className="choose">
       <div className="choose-first">
         <div className="choose-logo">
           <Image src={logo} alt="Health Logo" width={26.87} height={27.45} />
           <h2 className="service-text">Why Choose Us</h2>
         </div>
+        <p className="choosen-text">
+          We Remain Continuously Available for Your Health Services
+        </p>
         <p className="choose-text">
           We Remain Continuously <br /> Available for Your Health <br />{" "}
           Services
         </p>
+
         <div className="choose-content-div">
           <button className="choose-content">01</button>
           <div>
@@ -44,7 +48,9 @@ const ChooseUs = () => {
           <div>
             <h2 className="choose-content-text">Compassionate & Expert Care</h2>
             <p className="choose-content-desc">
-              We understand that every patient is unique, and their <br /> healthcare needs may vary. That's why we create individualized treatment.
+              We understand that every patient is unique, and their <br />{" "}
+              healthcare needs may vary. That's why we create individualized
+              treatment.
             </p>
           </div>
         </div>

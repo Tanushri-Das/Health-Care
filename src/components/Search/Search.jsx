@@ -7,7 +7,7 @@ import searchIcon from "@/images/search_btn.png";
 
 const Search = () => {
   return (
-    <div className="search">
+    <div id="hospitals" className="search">
       <div className="search-div">
         <div className="search-container">
           <Image

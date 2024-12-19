@@ -66,7 +66,7 @@ const Services = () => {
   ];
 
   return (
-    <div className="services">
+    <div id="services" className="services">
       <div className="service-logo">
         <Image src={logo} alt="Health Logo" width={16.4} height={16.39} />
         <h2 className="service-text">Our Services</h2>

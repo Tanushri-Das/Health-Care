@@ -23,7 +23,7 @@ const Contacts = () => {
     "2023-11-25",
   ];
   return (
-    <div className="contact">
+    <div id="contact" className="contact">
       <div className="service-logo">
         <Image src={logo} alt="Health Logo" width={16.4} height={16.39} />
         <h2 className="service-text">Contract Us</h2>
