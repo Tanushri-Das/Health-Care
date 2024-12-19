@@ -11,7 +11,7 @@
   );
 }
 
-.logo {
+.logo-div {
   display: flex;
   align-items: center;
 }
@@ -23,6 +23,7 @@
   font-weight: 600;
   line-height: 28px;
   text-transform: uppercase;
+  margin-left: 18px;
 }
 
 .hero-content-text1 {
@@ -61,7 +62,7 @@
 .btn-div {
   display: flex;
   margin-top: 20px;
-  gap: 31px;
+  gap: 30px;
 }
 
 .discover {
@@ -91,9 +92,21 @@
     line-height: 24px;
     margin-bottom: 20px;
     color: #788094;
+    margin-top: 5px;
   }
   .hero-content-text2 {
     line-height: 94.08px;
+  }
+  .health::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 16.17px;
+    background-image: url("../../images/border-line.png");
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 }
 
@@ -113,9 +126,21 @@
     font-weight: 400;
     line-height: 30px;
     color: #788094;
+    margin-top: 5px;
   }
   .hero-content-text2 {
     line-height: 94.08px;
+  }
+  .health::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 16.17px;
+    background-image: url("../../images/border-line.png");
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 }
 
@@ -126,7 +151,7 @@
     text-align: center;
     padding: 50px;
   }
-  .logo {
+  .logo-div {
     justify-content: center;
     margin-bottom: 15px;
   }
@@ -173,7 +198,7 @@
     text-align: center;
     padding: 20px;
   }
-  .logo {
+  .logo-div {
     justify-content: center;
     margin-bottom: 15px;
   }

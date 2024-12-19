@@ -135,7 +135,7 @@
     align-items: center;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .header {
     padding: 30px 50px;
   }
@@ -170,15 +170,24 @@
 
   .icon-container {
     flex-direction: column;
-    gap: 20px;
     align-items: center;
+    gap: 10px;
+  }
+
+  .appointment-btn-div {
+    margin-left: 25px;
   }
 }
-@media (max-width: 1200px) {
-  .header {
-    padding: 30px 50px;
+@media (min-width: 1201px) {
+  .icon-container {
+    gap: 10px;
+  }
+
+  .appointment-btn-div {
+    margin-left: 25px;
   }
 }
+
 @media (min-width: 1401px) {
   .header {
     padding: 30px 152px;

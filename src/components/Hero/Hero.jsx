@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <div className="hero">
       <div>
-        <div className="logo">
+        <div className="logo-div">
           <Image src={logo} alt="Health Logo" width={16.4} height={16.39} />
           <h2 className="hero-text">24/7 Emergency Service</h2>
         </div>

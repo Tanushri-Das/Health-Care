@@ -19,24 +19,29 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header-container">
-        {/* Logo Section */}
         <div className="logo">
           <Image src={logo} alt="Health Logo" width={45.04} height={46} />
           <h2 className="logo-text">Health</h2>
         </div>
-
-        {/* Menu Icon for Small Screens */}
         <div className="menu-icon" onClick={toggleMenu}>
           {menuOpen ? <FaTimes /> : <FiMenu />}
         </div>
-
-        {/* Navigation Links, Icons, and Button for Small Screens */}
         <nav className={`nav ${menuOpen ? "active" : ""}`}>
-          <Link href="/" className="links">Find Doctors</Link>
-          <Link href="/" className="links">Hospitals</Link>
-          <Link href="/" className="links">About Us</Link>
-          <Link href="/" className="links">Services</Link>
-          <Link href="/" className="links">Contact</Link>
+          <Link href="/" className="links">
+            Find Doctors
+          </Link>
+          <Link href="/" className="links">
+            Hospitals
+          </Link>
+          <Link href="/" className="links">
+            About Us
+          </Link>
+          <Link href="/" className="links">
+            Services
+          </Link>
+          <Link href="/" className="links">
+            Contact
+          </Link>
           <div className="icon-container">
             <div className="icon">
               <Image src={search} alt="search" width={15} height={15} />
@@ -49,14 +54,23 @@ const Header = () => {
           </div>
         </nav>
 
-        {/* Desktop Menu (Large Screen) */}
         <div className="desktop-menu">
           <nav className="nav-desktop">
-            <Link href="/" className="links">Find Doctors</Link>
-            <Link href="/" className="links">Hospitals</Link>
-            <Link href="/" className="links">About Us</Link>
-            <Link href="/" className="links">Services</Link>
-            <Link href="/" className="links">Contact</Link>
+            <Link href="/" className="links">
+              Find Doctors
+            </Link>
+            <Link href="/" className="links">
+              Hospitals
+            </Link>
+            <Link href="/" className="links">
+              About Us
+            </Link>
+            <Link href="/" className="links">
+              Services
+            </Link>
+            <Link href="/" className="links">
+              Contact
+            </Link>
           </nav>
           <div className="icon-container">
             <div className="icon">
@@ -66,7 +80,9 @@ const Header = () => {
               <Image src={cart} alt="cart" width={16.88} height={15.75} />
               <span className="cart-count">5</span>
             </div>
-            <button className="appointment-btn">Appointment Now</button>
+            <div className="appointment-btn-div">
+              <button className="appointment-btn">Appointment Now</button>
+            </div>
           </div>
         </div>
       </div>

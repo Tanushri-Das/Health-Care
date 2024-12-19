@@ -79,3 +79,8 @@
   color: #636e88;
   margin: 5px 0;
 }
+@media (max-width: 600px) {
+  .doctor-card {
+    margin: 15px;
+  }
+}
